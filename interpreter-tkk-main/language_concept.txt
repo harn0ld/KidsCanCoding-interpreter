@@ -1,0 +1,63 @@
+
+// Język interpretowany.
+
+// Nasz język będzie przeznaczony do nauki programowania dla dzieci i osób nietechnicznych pragnących rozpocząć naukę programowania.
+
+// Ze względu na charakterystykę języka będziemy kłaść nacisk na prostotę i intuicyjność gramatyki naszego języka dla osób nietechnicznych. Język ma się czytać jak zwyczajny tekst dlatego będziemy dążyć do zastąpienia jak największej ilości operatorów symbolicznych (np. “=”, “==”, “=<” itp.) operatorami słownymi.
+
+// Przykładowy kod
+
+number i is 1
+string x is “Hello world!”
+until i is not equal than 10 {
+	write x
+	i is i + 1
+}
+
+number p
+number b is 100
+get p
+
+if p is less than b {
+	write “mniejsze od “ + b
+} else if p is equal to b {
+	write “równe “ + b
+} else {
+	write “większe od “ + b
+}
+
+if p is less than b: write “mniejsze od “ + b
+else if p is equal to b: write “równe “ + b
+else: write “większe od “ + b
+
+
+function fun(number x, string s) returns number {   // “returns nothing” for voids
+	x times: write s
+	return x + 10
+}
+
+fun 10, “witam” // fun(10, “witam”)
+write fun(10, “witam”) // write(fun(10, “witam”))
+write 10 + 10 // write(10 + 10), not write(10) + 10
+
+// zakładając, że weather, hour, yell mamy zdefiniowane
+if weather is equal to “good”: until hour is less than 21 {
+    5 times: yell “I can play outside!”
+    do_a_flip
+}
+
+// instrukcje warunkowe:
+if ... {}
+unless ... {}
+
+// pętle
+while ... {}
+until ... {}
+n times {}
+
+fn1 x && fn2 y
+
+
+
+
+
